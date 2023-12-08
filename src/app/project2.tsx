@@ -1,17 +1,9 @@
-export default function Project1() {
+export default function Project2Component() {
     return (
         <div className="bg-gray-500/10 rounded">
             <div className="flex gap-2">
-                <img
-                    className="rounded h-[15rem]"
-                    src="/individual-development-plan.png"
-                    alt="MyImage"
-                />
-
                 <div className="p-2">
-                    <h1 className="font-medium text-xl">
-                        Individual Development Plan
-                    </h1>
+                    <h1 className="font-medium text-xl">Dankos Expedition</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Esse corrupti harum rem quo doloribus, accusantium
@@ -20,6 +12,11 @@ export default function Project1() {
                         obcaecati quae debitis.
                     </p>
                 </div>
+                <img
+                    className="rounded h-[15rem]"
+                    src="/dankos-expedition.png"
+                    alt="MyImage"
+                />
             </div>
         </div>
     );

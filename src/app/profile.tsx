@@ -9,9 +9,11 @@ export default function ProfileComponent() {
                 </div>
                 <div className="p-4">
                     <h4 className="text-center text-2xl text-gray-200">
-                        Hello! My Name Is
+                        <span className="text-teal-400">Hello!</span> My Name Is
                     </h4>
-                    <h1 className="text-center text-4xl">Achmad NurFaizy</h1>
+                    <h1 className="text-center text-4xl">
+                        Achmad Nur<span className="text-teal-400">Faizy</span>
+                    </h1>
                 </div>
                 <div className="text-center mt-4">
                     <Link
@@ -22,7 +24,10 @@ export default function ProfileComponent() {
                     </Link>
                 </div>
                 <div className="mt-16 text-center">
-                    <a href="#My-Project" className="inline-block animate-bounce">
+                    <a
+                        href="#My-Project"
+                        className="inline-block animate-bounce"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="48"
@@ -32,12 +37,12 @@ export default function ProfileComponent() {
                             <g
                                 fill="none"
                                 stroke="currentColor"
-                                stroke-linejoin="round"
-                                stroke-width="4"
+                                strokeLinejoin="round"
+                                strokeWidth="4"
                             >
                                 <path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
                                 <path
-                                    stroke-linecap="round"
+                                    strokeLinecap="round"
                                     d="m33 21l-9 9l-9-9"
                                 />
                             </g>
