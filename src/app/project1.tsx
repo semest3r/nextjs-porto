@@ -1,7 +1,7 @@
 export default function Project1Component() {
     return (
         <div className="bg-gray-500/10 rounded">
-            <div className="flex gap-2">
+            <div className="md:flex gap-2">
                 <img
                     className="rounded h-[15rem]"
                     src="/individual-development-plan.png"

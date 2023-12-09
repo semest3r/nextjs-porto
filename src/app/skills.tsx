@@ -4,7 +4,7 @@ export default function SkillsComponent() {
             <h1 className="text-4xl text-gray-200 font-medium text-center">
                 My Skills
             </h1>
-            <div className="mt-8 grid grid-cols-3 gap-3 justify-items-center items-center">
+            <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-3 justify-items-center items-center">
                 <div className="bg-gray-200/10 w-full border-2 border-teal-400 shadow h-[8rem] p-4 rounded-md">
                     <svg
                         className="h-[4rem] mx-auto"
@@ -71,8 +71,8 @@ export default function SkillsComponent() {
                     <svg
                         className="h-[4rem] mx-auto text-red-500"
                         xmlns="http://www.w3.org/2000/svg"
-                        width="256"
-                        height="316"
+                        width="64"
+                        height="64"
                         viewBox="0 0 256 316"
                     >
                         <path
@@ -83,7 +83,7 @@ export default function SkillsComponent() {
                     <div className="mt-2 text-center">Codeigniter</div>
                 </div>
             </div>
-            <div className="mt-8 grid grid-cols-3 gap-4 justify-items-center items-center">
+            <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center items-center">
                 <div className="bg-gray-200/10 w-full border-2 border-teal-400 shadow h-[8rem] p-4 rounded-md">
                     <svg
                         className="h-[4rem] mx-auto"
