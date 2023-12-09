@@ -6,9 +6,9 @@ export default function AboutMePage() {
     return (
         <div className="min-h-screen">
             <Header />
-            <div className="mt-4 flex gap-4">
+            <div className="mt-4 sm:flex gap-4">
                 <img
-                    className="rounded-md w-[17rem] object-none object-top"
+                    className="rounded-md sm:w-[17rem] object-none object-top"
                     src="profile.png"
                     alt="MyProfile"
                 />
