@@ -13,11 +13,9 @@ export default function Project1Component() {
                         Individual Development Plan
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Esse corrupti harum rem quo doloribus, accusantium
-                        architecto dolore accusamus doloremque soluta aspernatur
-                        consectetur dignissimos odio expedita eveniet dicta
-                        obcaecati quae debitis.
+                        This project was created while participating in the
+                        Kampus Merdeka MSIB Batch 4 and 5. This website was
+                        created using Laravel, IntertiaJs, and Vue3.
                     </p>
                 </div>
             </div>

@@ -10,11 +10,9 @@ export default function Project2Component() {
                 <div className="p-2">
                     <h1 className="font-medium text-xl">Dankos Expedition</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Esse corrupti harum rem quo doloribus, accusantium
-                        architecto dolore accusamus doloremque soluta aspernatur
-                        consectetur dignissimos odio expedita eveniet dicta
-                        obcaecati quae debitis.
+                        This project was created while participating in the
+                        Kampus Merdeka MSIB Batch 5. This website was created
+                        using Laravel, Blade, Select2, and Jquery.
                     </p>
                 </div>
             </div>
