@@ -4,10 +4,14 @@ import Project1Component from "./project1";
 import Project2Component from "./project2";
 import { useRef } from "react";
 import SkillsComponent from "./skills";
+import Head from "next/head";
 
 export default function HomePage() {
     return (
         <div>
+            <Head>
+                <title>My Portofolio</title>
+            </Head>
             <Header />
             <ProfileComponent />
             <section id="My-Project" className="py-4 min-h-screen">

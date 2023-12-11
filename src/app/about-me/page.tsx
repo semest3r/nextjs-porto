@@ -1,10 +1,14 @@
 import Header from "@components/header";
 import Introduction from "./introduction";
 import Information from "./information";
+import Head from "next/head";
 
 export default function AboutMePage() {
     return (
         <div className="min-h-screen">
+            <Head>
+                <title>About Me</title>
+            </Head>
             <Header />
             <div className="mt-4 sm:flex gap-4">
                 <img
