@@ -15,7 +15,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang="en" className="scroll-smooth text-white">
             <body className={inter.className}>
                 <div
                     className="bg-[#152B3D] min-h-screen max-h-full shadow"
