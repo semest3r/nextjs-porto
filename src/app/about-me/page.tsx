@@ -26,6 +26,14 @@ export default function AboutMePage() {
                     >
                         LinkedIn
                     </a>
+                    <a
+                        href="https://github.com/semest3r"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-4 mt-4 inline-block p-2  hover:bg-gray-700 text-white font-bold rounded-md"
+                    >
+                        GitHub
+                    </a>
                 </div>
             </div>
         </div>
