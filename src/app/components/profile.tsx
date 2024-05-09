@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Profile() {
     return (
         <section id="home">
-            <div className="mt-8">
+            <div className="mt-4">
                 <div className="h-[17rem] w-[17rem] mx-auto overflow-hidden rounded-full">
                      <ProfileImg className="" />
                 </div>
-                <div className="p-4">
+                <div className="mt-4 p-4">
                     <h4 className="text-center text-2xl text-gray-200">
                         <span className="text-teal-400">Hello!</span> My Name Is
                     </h4>
