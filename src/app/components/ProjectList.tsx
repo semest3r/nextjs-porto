@@ -30,7 +30,7 @@ export default function ProjectList() {
                         <h1 className="font-medium text-xl">
                             {project.title}
                         </h1>
-                        <p className="mt-2 text-base">
+                        <p className="mt-2 text-base text-gray-200">
                             {project.description}
                         </p>
                     </div>
