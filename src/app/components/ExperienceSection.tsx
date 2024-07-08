@@ -48,7 +48,7 @@ export default function ExperienceSection() {
                         <div className="pb-8 flex gap-8 w-full" key={project.year}>
                             <div className="py-12 space-y-4">
                                 {project.project_list.map((pl) => (
-                                    <div className="grid grid-cols-2 gap-8" >
+                                    <div className="grid grid-cols-2 gap-8" key={pl.id}>
                                         <div>
                                             <h1 className="font-medium text-xl text-[#414141]">
                                                 {pl.title}
