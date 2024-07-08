@@ -6,7 +6,7 @@ export default function ProjectList() {
             id: 1,
             title: "Individual Development Plan",
             description: "This project was created while participating in the Kampus Merdeka MSIB Batch 4 and 5. This website was created using Laravel, IntertiaJs, and Vue3.",
-            image: <DankosIdpImg className="rounded"/>
+            image: <DankosIdpImg className="rounded" />
         },
         {
             id: 2,
@@ -25,7 +25,7 @@ export default function ProjectList() {
         <div className="bg-gray-500/10 rounded">
             {projects.map(project => (
                 <div className="mt-4 md:grid md:grid-cols-2 gap-2" key={project.id}>
-                   {project.image} 
+                    {project.image}
                     <div className="flex-1 p-2">
                         <h1 className="font-medium text-xl">
                             {project.title}

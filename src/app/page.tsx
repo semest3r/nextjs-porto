@@ -1,21 +1,24 @@
-import Header from "@/SharedComponents/header";
-import Profile from "./components/profile";
-import SkillsComponent from "./components/skills";
 import { Metadata } from "next";
-import ProjectList from "./components/ProjectList";
-import Projects from "./components/Projects";
+import HomeSection from "./components/HomeSection";
+import ExperienceSection from "./components/ExperienceSection";
+import AboutSection from "./components/AboutSection";
+import SkillSection from "./components/SkillSection";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Portofolio",
+    title: "Hi!!!",
 };
 
 export default function HomePage() {
     return (
-        <div className="space-y-24">
-            <Header />
-            <Profile />
-            <Projects />
-            <SkillsComponent />
+        <div className="container mx-auto">
+            <HomeSection />
+            <ExperienceSection />
+            <AboutSection />
+            <SkillSection />
+            <Link href="#home" className="fixed bottom-4 right-4 text-white drop-shadow-[4px_4px_0px_rgba(65,65,65,1)] rounded-full bg-[#00B3C6]">
+                <ArrowDown className="" />
+            </Link>
         </div>
     );
 }
@@ -23,25 +26,6 @@ export default function HomePage() {
 
 function ArrowDown({ className }: { className: string }) {
     return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
-            className={className}
-        >
-            <g
-                fill="none"
-                stroke="currentColor"
-                strokeLinejoin="round"
-                strokeWidth="4"
-            >
-                <path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
-                <path
-                    strokeLinecap="round"
-                    d="m33 21l-9 9l-9-9"
-                />
-            </g>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6l-6 6z" /></svg>
     )
 }

@@ -1,8 +1,7 @@
-import { Inter, Poppins } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
-const inter = Poppins({ subsets: ["latin"], weight: "400" });
+const inter = Roboto_Mono({ weight: ["400"], subsets: ["latin"] });
 
 export default function RootLayout({
     children,
@@ -10,19 +9,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="scroll-smooth text-white">
-            <Head>
-                <title>Test</title>
-            </Head>
+        <html lang="en" className="antialiased scroll-smooth bg-white">
             <body className={inter.className}>
-                <div
-                    className="bg-[#152B3D] min-h-screen max-h-full shadow"
-                    style={{ backgroundImage: `url('/endless-clouds.svg')` }}
-                >
-                    <div className="container max-w-4xl p-8 mx-auto h-full bg-slate-900/70">
-                        {children}
-                    </div>
-                </div>
+                <div>{children}</div>
             </body>
         </html>
     );
