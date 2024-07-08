@@ -10,13 +10,13 @@ export default function AboutSection() {
                 <ProfileImg className="w-[360px]" />
                 <div>
                     <h1 className="text-3xl">About Me</h1>
-                    <p className="mt-4 leading-10 text-justify">Hi! I'm Achmad NurFaizy, an Information Systems student with a passion for web development. I love turning ideas into cool websites and web apps. In my free time, I'm a big online gamer, always up for a virtual adventure!</p>
+                    <p className="mt-4 leading-10 text-justify">Hi! I&apos;m Achmad NurFaizy, an Information Systems student with a passion for web development. I love turning ideas into cool websites and web apps. In my free time, I&apos;m a big online gamer, always up for a virtual adventure!</p>
                     <div className="mt-4 space-x-6">
-                        <a href={"https://www.linkedin.com/in/nfaizy/"} target='blank_' className="inline-flex items-center bg-[#00B3C6] pl-4 pr-6 py-4 drop-shadow-[8px_8px_0px_rgba(65,65,65,1)] rounded-2xl">
+                        <a href={"https://www.linkedin.com/in/nfaizy/"} target="blank_" className="inline-flex items-center bg-[#00B3C6] pl-4 pr-6 py-4 drop-shadow-[8px_8px_0px_rgba(65,65,65,1)] rounded-2xl">
                             <BiLinkedin />
                             <span className='pl-4'>LinkedIn</span>
                         </a>
-                        <a href={"https://github.com/semest3r"} target='blank_' className="inline-flex items-center bg-[#00B3C6] pl-4 pr-6 py-4 drop-shadow-[8px_8px_0px_rgba(65,65,65,1)] rounded-2xl">
+                        <a href={"https://github.com/semest3r"} target="blank_" className="inline-flex items-center bg-[#00B3C6] pl-4 pr-6 py-4 drop-shadow-[8px_8px_0px_rgba(65,65,65,1)] rounded-2xl">
                             <BiGithub />
                             <span className='pl-4'>GitHub</span>
                         </a>
