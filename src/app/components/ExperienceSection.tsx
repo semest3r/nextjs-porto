@@ -9,14 +9,14 @@ export default function ExperienceSection() {
                     id: 1,
                     title: "Individual Development Plan",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 4 and 5. This website was created using Laravel, IntertiaJs, and Vue3.",
-                    image: <DankosIdpImg className="rounded" />,
+                    image: <DankosIdpImg className="rounded row-start-1 sm:row-start-auto" />,
                     tech_stacks: ['laravel', 'IntertiaJs', 'Vue3', 'TailwindCSS', 'HeadlessUI', 'Mysql']
                 },
                 {
                     id: 2,
                     title: "Dankos Expedition",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 5. This website was created using Laravel, Blade, Select2, and Jquery.",
-                    image: <DankosExpdtnImg className="rounded" />,
+                    image: <DankosExpdtnImg className="rounded row-start-1 sm:row-start-auto" />,
                     tech_stacks: ['laravel', 'Jquery', 'Blade Template', 'TailwindCSS', 'Mysql']
                 },
 
@@ -29,14 +29,14 @@ export default function ExperienceSection() {
                     id: 1,
                     title: "Catalog Product",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 4 and 5. This website was created using Laravel, IntertiaJs, and Vue3.",
-                    image: <CatelogImg className="rounded" />,
+                    image: <CatelogImg className="rounded row-start-1 sm:row-start-auto" />,
                     tech_stacks: ['laravel', 'RestAPI', 'NextJS', 'TailwindCSS', 'Mysql']
                 },
                 {
                     id: 2,
                     title: "Jaring Help",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 5. This website was created using Laravel, Blade, Select2, and Jquery.",
-                    image: <JaringHelpImg className="rounded" />,
+                    image: <JaringHelpImg className="rounded row-start-1 sm:row-start-auto" />,
                     tech_stacks: ['laravel', 'AlpineJS', 'Blade Template', 'TailwindCSS', 'Mysql']
                 },
             ]
@@ -49,10 +49,10 @@ export default function ExperienceSection() {
                 <div className="mt-2 h-[4px] w-[200px] bg-[#9057EA] mx-auto rounded-2xl"></div>
                 <div className="mt-16">
                     {projects.map((project) => (
-                        <div className="pb-8 flex gap-8 w-full" key={project.year}>
-                            <div className="py-12 space-y-4">
+                        <div className="pb-8 flex gap-4 sm:gap-8 w-full" key={project.year}>
+                            <div className="py-12 space-y-12 sm:space-y-4">
                                 {project.project_list.map((pl) => (
-                                    <div className="grid grid-flow-row-dense sm:grid-cols-2 gap-8" key={pl.id}>
+                                    <div className="grid grid-flow-row-dense sm:grid-cols-2 gap-4 sm:gap-8" key={pl.id}>
                                         <div>
                                             <h1 className="font-medium text-xl text-[#414141]">
                                                 {pl.title}
