@@ -60,8 +60,8 @@ export default function ExperienceSection() {
                                             <p className="mt-2 text-base text-[#414141]/80">
                                                 {pl.description}
                                             </p>
-                                            <ul className="mt-4 flex flex-wrap gap-2 sm:gap-4">{pl.tech_stacks.map((ts) => (
-                                                <li className="bg-[#414141] px-2 py-1 text-sm sm:text-base rounded-lg">{ts}</li>
+                                            <ul className="mt-4 flex flex-wrap gap-2 sm:gap-4">{pl.tech_stacks.map((ts, index) => (
+                                                <li className="bg-[#414141] px-2 py-1 text-sm sm:text-base rounded-lg" key={index}>{ts}</li>
                                             ))}
                                             </ul>
                                         </div>
