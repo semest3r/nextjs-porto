@@ -10,14 +10,14 @@ export default function ExperienceSection() {
                     title: "Individual Development Plan",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 4 and 5. Used for administration and monitoring each individual development progress ",
                     image: <DankosIdpImg className="rounded row-start-1 sm:row-start-auto" />,
-                    tech_stacks: ['laravel', 'IntertiaJs', 'Vue3', 'TailwindCSS', 'HeadlessUI', 'MySql']
+                    tech_stacks: ['Laravel', 'IntertiaJs', 'Vue3', 'TailwindCSS', 'HeadlessUI', 'MySql']
                 },
                 {
                     id: 2,
                     title: "Dankos Expedition",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 5. Used for request delivery document or something to another department in pharmacy manufacture industry, tracking and monitoring delivery. ",
                     image: <DankosExpdtnImg className="rounded row-start-1 sm:row-start-auto" />,
-                    tech_stacks: ['laravel', 'Jquery', 'Blade Template', 'TailwindCSS', 'MySql']
+                    tech_stacks: ['Laravel', 'Jquery', 'Blade Template', 'TailwindCSS', 'MySql']
                 },
 
             ]
@@ -30,14 +30,14 @@ export default function ExperienceSection() {
                     title: "Catalog Product",
                     description: "This Project was created while i learn javascript, reactjs, nextjs. dynamic category menu and list product",
                     image: <CatelogImg className="rounded row-start-1 sm:row-start-auto" />,
-                    tech_stacks: ['laravel', 'RestAPI', 'NextJS', 'TailwindCSS', 'MySql']
+                    tech_stacks: ['Laravel', 'RestAPI', 'NextJS', 'TailwindCSS', 'MySql']
                 },
                 {
                     id: 2,
                     title: "Jaring Help",
                     description: "This project was created while finishing my thesis in Information Systems Studies. Management Helpdesk for easy management of data, information to the client and work evaluation",
                     image: <JaringHelpImg className="rounded row-start-1 sm:row-start-auto" />,
-                    tech_stacks: ['laravel', 'AlpineJS', 'Blade Template', 'TailwindCSS', 'PostgreSQL']
+                    tech_stacks: ['Laravel', 'AlpineJS', 'Blade Template', 'TailwindCSS', 'PostgreSQL']
                 },
             ]
         },
