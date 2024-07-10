@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function AboutSection() {
     return (
         <section id="about-me" className="bg-[#9057EA]">
-            <div className="px-8 sm:px-24 py-12 flex flex-col sm:flex-row gap-8 sm:gap-16 items-center">
+            <div className="px-8 sm:px-24 py-12 flex flex-col sm:flex-row gap-6 sm:gap-16 items-center">
                 <ProfileImg className="w-[240px] sm:w-[360px]" />
                 <div>
                     <h1 className="text-3xl">About Me</h1>
