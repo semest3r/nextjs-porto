@@ -28,7 +28,7 @@ export default function ExperienceSection() {
                 {
                     id: 1,
                     title: "Catalog Product",
-                    description: "This Project was created while i learn javascript, reactjs, nextjs.",
+                    description: "This Project was created while i learn javascript, reactjs, nextjs. dynamic category menu and list product",
                     image: <CatelogImg className="rounded row-start-1 sm:row-start-auto" />,
                     tech_stacks: ['laravel', 'RestAPI', 'NextJS', 'TailwindCSS', 'MySql']
                 },
