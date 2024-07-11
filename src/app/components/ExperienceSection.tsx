@@ -1,4 +1,5 @@
 import { CatelogImg, DankosExpdtnImg, DankosIdpImg, JaringHelpImg } from "@/SharedComponents/Images"
+import patternSVG from "@/assets/pattern/pattern.png";
 
 export default function ExperienceSection() {
     const projects = [
@@ -43,38 +44,40 @@ export default function ExperienceSection() {
         },
     ]
     return (
-        <section id="experience" className="pl-8 pr-4 sm:pl-16 sm:pr-8 bg-white">
-            <div className="py-12 ">
-                <h1 className="text-center text-3xl text-[#414141]">What I Do</h1>
-                <div className="mt-2 h-[4px] w-[200px] bg-[#9057EA] mx-auto rounded-2xl"></div>
-                <div className="mt-16">
-                    {projects.map((project) => (
-                        <div className="pb-8 flex gap-4 sm:gap-8 w-full" key={project.year}>
-                            <div className="py-12 space-y-12 sm:space-y-4">
-                                {project.project_list.map((pl) => (
-                                    <div className="grid grid-flow-row-dense sm:grid-cols-2 gap-4 sm:gap-8" key={pl.id}>
-                                        <div>
-                                            <h1 className="font-medium text-xl text-[#414141]">
-                                                {pl.title}
-                                            </h1>
-                                            <p className="mt-2 text-base text-[#414141]/80">
-                                                {pl.description}
-                                            </p>
-                                            <ul className="mt-4 flex flex-wrap gap-2 sm:gap-4">{pl.tech_stacks.map((ts, index) => (
-                                                <li className="bg-[#414141] px-2 py-1 text-sm sm:text-base rounded-lg" key={index}>{ts}</li>
-                                            ))}
-                                            </ul>
+        <section id="experience" className="pattern">
+            <div className="pl-8 pr-4 sm:pl-16 sm:pr-8 bg-white/80">
+                <div className="py-12 ">
+                    <h1 className="text-center text-3xl text-[#414141]">What I Do</h1>
+                    <div className="mt-2 h-[4px] w-[200px] bg-[#9057EA] mx-auto rounded-2xl"></div>
+                    <div className="mt-16">
+                        {projects.map((project) => (
+                            <div className="pb-8 flex gap-4 sm:gap-8 w-full" key={project.year}>
+                                <div className="py-12 space-y-12 sm:space-y-4">
+                                    {project.project_list.map((pl) => (
+                                        <div className="grid grid-flow-row-dense sm:grid-cols-2 gap-4 sm:gap-8" key={pl.id}>
+                                            <div>
+                                                <h1 className="font-medium text-xl text-[#414141]">
+                                                    {pl.title}
+                                                </h1>
+                                                <p className="mt-2 text-base text-[#414141]/80">
+                                                    {pl.description}
+                                                </p>
+                                                <ul className="mt-4 flex flex-wrap gap-2 sm:gap-4">{pl.tech_stacks.map((ts, index) => (
+                                                    <li className="bg-[#414141] px-2 py-1 text-sm sm:text-base rounded-lg" key={index}>{ts}</li>
+                                                ))}
+                                                </ul>
+                                            </div>
+                                            {pl.image}
                                         </div>
-                                        {pl.image}
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
+                                <div className="flex flex-col gap-8">
+                                    <div className="text-[#414141]">{project.year}</div>
+                                    <div className="bg-[#00B3C6] w-[4px] sm:w-[8px] mx-auto rounded-2xl h-full"></div>
+                                </div>
                             </div>
-                            <div className="flex flex-col gap-8">
-                                <div className="text-[#414141]">{project.year}</div>
-                                <div className="bg-[#00B3C6] w-[4px] sm:w-[8px] mx-auto rounded-2xl h-full"></div>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
