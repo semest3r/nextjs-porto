@@ -84,7 +84,7 @@ export default function ExperienceSection() {
                                                 ))}
                                                 </ul>
                                             </div>
-                                            <SwiperComponents data={pl.image} />
+                                            {pl.image}
                                         </div>
                                     ))}
                                 </div>
