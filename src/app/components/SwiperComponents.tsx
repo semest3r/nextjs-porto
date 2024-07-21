@@ -21,7 +21,9 @@ export default function SwiperComponents({ data }: { data: Array<any> }) {
                 "--swiper-navigation-size": "25px",
             }}
         >
-
+            {data.map((value, index) => (
+                <swiper-slide key={index}>{value}</swiper-slide>
+            ))}
         </swiper-container>
     );
 };
