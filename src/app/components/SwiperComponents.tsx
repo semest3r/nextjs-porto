@@ -5,7 +5,7 @@ import { register } from 'swiper/element/bundle';
 
 register();
 
-export default ({ data }: { data: Array<any> }) => {
+export default function SwiperComponents({ data }: { data: Array<any> }) {
     const [isLoading, setIsLoading] = useState(true);
     const swiperElRef: any = useRef(null);
     useEffect(() => {
