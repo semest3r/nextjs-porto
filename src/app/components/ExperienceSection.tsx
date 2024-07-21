@@ -84,7 +84,9 @@ export default function ExperienceSection() {
                                                 ))}
                                                 </ul>
                                             </div>
-                                            {pl.image}
+                                            {pl.image.map((value, index) => (
+                                                <div key={index}>{value}</div>
+                                            ))}
                                         </div>
                                     ))}
                                 </div>
