@@ -17,7 +17,7 @@ export default ({ data }: { data: Array<any> }) => {
             slides-per-view="1"
             navigation="true"
             style={{
-                "--swiper-navigation-color": "#414141",
+                "--swiper-navigation-color": "#414141/20",
                 "--swiper-navigation-size": "25px",
             }}
         >
