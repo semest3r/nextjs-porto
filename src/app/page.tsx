@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
     return (
-        <div className="container mx-auto">
+        <div className="">
             <HomeSection />
             <ExperienceSection />
             <AboutSection />
             <SkillSection />
-            <Link href="#home" className="fixed bottom-4 right-4 text-white drop-shadow-[4px_4px_0px_rgba(65,65,65,1)] rounded-full bg-[#00B3C6]">
+            <Link href="#home" className="fixed bottom-4 right-4 text-[#ffffff] drop-shadow-[4px_4px_0px_rgba(65,65,65,1)] rounded-full bg-[#00B3C6]">
                 <ArrowDown className="" />
             </Link>
         </div>
