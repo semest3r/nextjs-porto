@@ -1,5 +1,6 @@
 import { CatelogImg, DankosExpdtnImg, DankosIdpImg, JaringHelpImg } from "@/SharedComponents/Images"
 import patternSVG from "@/assets/pattern/pattern.png";
+import { SwiperComponent } from "./SwiperComponent";
 
 export default function ExperienceSection() {
     const projects = [
@@ -10,16 +11,19 @@ export default function ExperienceSection() {
                     id: 1,
                     title: "Individual Development Plan",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 4 and 5. Used for administration and monitoring each individual development progress ",
-                    image: <DankosIdpImg className="rounded row-start-1 sm:row-start-auto" />,
-                       
+                    image: [<DankosIdpImg className="rounded row-start-1 sm:row-start-auto" />, <DankosIdpImg className="rounded row-start-1 sm:row-start-auto" />, <DankosIdpImg className="rounded row-start-1 sm:row-start-auto" />,],
+
                     tech_stacks: ['Laravel', 'IntertiaJs', 'Vue3', 'TailwindCSS', 'HeadlessUI', 'MySql']
                 },
                 {
                     id: 2,
                     title: "Dankos Expedition",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 5. Used for request delivery document or something to another department in pharmacy manufacture industry, tracking and monitoring delivery. ",
-                    image: 
+                    image: [
                         <DankosExpdtnImg className="rounded row-start-1 sm:row-start-auto" />,
+                        <DankosExpdtnImg className="rounded row-start-1 sm:row-start-auto" />,
+                        <DankosExpdtnImg className="rounded row-start-1 sm:row-start-auto" />,
+                    ],
 
                     tech_stacks: ['Laravel', 'Jquery', 'Blade Template', 'TailwindCSS', 'MySql']
                 },
@@ -33,7 +37,9 @@ export default function ExperienceSection() {
                     id: 1,
                     title: "Catalog Product",
                     description: "This Project was created while i learn javascript, reactjs, nextjs. dynamic category menu and list product",
-                    image: <CatelogImg className="rounded row-start-1 sm:row-start-auto" />,
+                    image: [
+                        <CatelogImg className="rounded row-start-1 sm:row-start-auto" />, <CatelogImg className="rounded row-start-1 sm:row-start-auto" />, <CatelogImg className="rounded row-start-1 sm:row-start-auto" />,
+                    ],
 
                     tech_stacks: ['Laravel', 'RestAPI', 'NextJS', 'TailwindCSS', 'MySql']
                 },
@@ -41,7 +47,11 @@ export default function ExperienceSection() {
                     id: 2,
                     title: "Jaring Help",
                     description: "This project was created while finishing my thesis in Information Systems Studies. Management Helpdesk for easy management of data, information to the client and work evaluation",
-                    image: <JaringHelpImg className="rounded row-start-1 sm:row-start-auto" />,
+                    image: [
+                        <JaringHelpImg className="rounded row-start-1 sm:row-start-auto" />,
+                        <JaringHelpImg className="rounded row-start-1 sm:row-start-auto" />,
+                        <JaringHelpImg className="rounded row-start-1 sm:row-start-auto" />,
+                    ],
                     tech_stacks: ['Laravel', 'AlpineJS', 'Blade Template', 'TailwindCSS', 'PostgreSQL']
                 },
             ]
@@ -71,8 +81,7 @@ export default function ExperienceSection() {
                                                 ))}
                                                 </ul>
                                             </div>
-                                            <div >{pl.image}</div>
-
+                                            <div className="row-start-1 sm:row-start-auto"><SwiperComponent data={pl.image} /></div>
                                         </div>
                                     ))}
                                 </div>

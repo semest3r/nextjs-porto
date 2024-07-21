@@ -6,25 +6,20 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLikeOfReactNode } from "react"
 
-export function CarouselDemo() {
+export function SwiperComponent({ data }: { data: any }) {
     return (
-        <Carousel className="w-full max-w-xs">
+        <Carousel className="w-full max-w-sm mx-auto">
             <CarouselContent>
-                {Array.from({ length: 5 }).map((_, index) => (
+                {data.map((val: Iterable<ReactNode>, index: number) => (
                     <CarouselItem key={index}>
-                        <div className="p-1">
-                            <Card>
-                                <CardContent className="flex aspect-square items-center justify-center p-6">
-                                    <span className="text-4xl font-semibold">{index + 1}</span>
-                                </CardContent>
-                            </Card>
-                        </div>
+                        {val}
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="left-0 text-[#414141]" />
+            <CarouselNext className="right-0 text-[#414141]" />
         </Carousel>
     )
 }

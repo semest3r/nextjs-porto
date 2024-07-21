@@ -36,6 +36,16 @@ export function DankosIdpImg({ className }: { className: string }) {
         <Image src={DankosIdpImage} className={className} alt="My Image" />
     </>)
 }
+export function DankosIdpImg2({ className }: { className: string }) {
+    return (<>
+        <Image src={DankosIdpImage} className={className} alt="My Image" />
+    </>)
+}
+export function DankosIdpImg3({ className }: { className: string }) {
+    return (<>
+        <Image src={DankosIdpImage} className={className} alt="My Image" />
+    </>)
+}
 
 export function CatelogImg({ className }: { className: string }) {
     return (<>
