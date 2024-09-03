@@ -1,5 +1,4 @@
-import { CatelogImg, DankosExpdtnImg, DankosIdpImg, JaringHelpImg } from "@/SharedComponents/Images"
-import patternSVG from "@/assets/pattern/pattern.png";
+import { CatelogImg, DankosExpdtnImg, DankosIdpDashboardImg, DankosIdpHistoryImg, DankosIdpLoginImg, DeaDashboardImg, DeaPengirimanImg, DeaTrackingImg, JaringHelpDashboardImg, JaringHelpHomeImg, JaringHelpLoginImg } from "@/SharedComponents/Images"
 import { SwiperComponent } from "./SwiperComponent";
 
 export default function ExperienceSection() {
@@ -12,9 +11,9 @@ export default function ExperienceSection() {
                     title: "Individual Development Plan",
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 4 and 5. Used for administration and monitoring each individual development progress ",
                     image: [
-                        <DankosIdpImg key={1} className="rounded row-start-1 sm:row-start-auto" />,
-                        <DankosIdpImg key={2} className="rounded row-start-1 sm:row-start-auto" />, 
-                        <DankosIdpImg key={3} className="rounded row-start-1 sm:row-start-auto" />,],
+                        <DankosIdpLoginImg key={1} className="rounded row-start-1 sm:row-start-auto" />,
+                        <DankosIdpDashboardImg key={2} className="rounded row-start-1 sm:row-start-auto" />, 
+                        <DankosIdpHistoryImg key={3} className="rounded row-start-1 sm:row-start-auto" />,],
 
                     tech_stacks: ['Laravel', 'IntertiaJs', 'Vue3', 'TailwindCSS', 'HeadlessUI', 'MySql']
                 },
@@ -24,8 +23,9 @@ export default function ExperienceSection() {
                     description: "This project was created while participating in the Kampus Merdeka MSIB Batch 5. Used for request delivery document or something to another department in pharmacy manufacture industry, tracking and monitoring delivery. ",
                     image: [
                         <DankosExpdtnImg key={1} className="rounded row-start-1 sm:row-start-auto" />,
-                        <DankosExpdtnImg key={2} className="rounded row-start-1 sm:row-start-auto" />,
-                        <DankosExpdtnImg key={3} className="rounded row-start-1 sm:row-start-auto" />,
+                        <DeaDashboardImg key={2} className="rounded row-start-1 sm:row-start-auto" />,
+                        <DeaTrackingImg key={3} className="rounded row-start-1 sm:row-start-auto" />,
+                        <DeaPengirimanImg key={4} className="rounded row-start-1 sm:row-start-auto" />,
                     ],
 
                     tech_stacks: ['Laravel', 'Jquery', 'Blade Template', 'TailwindCSS', 'MySql']
@@ -53,9 +53,9 @@ export default function ExperienceSection() {
                     title: "Jaring Help",
                     description: "This project was created while finishing my thesis in Information Systems Studies. Management Helpdesk for easy management of data, information to the client and work evaluation",
                     image: [
-                        <JaringHelpImg key={1} className="rounded row-start-1 sm:row-start-auto" />,
-                        <JaringHelpImg key={2} className="rounded row-start-1 sm:row-start-auto" />,
-                        <JaringHelpImg key={3} className="rounded row-start-1 sm:row-start-auto" />,
+                        <JaringHelpLoginImg key={1} className="rounded row-start-1 sm:row-start-auto" />,
+                        <JaringHelpDashboardImg key={2} className="rounded row-start-1 sm:row-start-auto" />,
+                        <JaringHelpHomeImg key={3} className="rounded row-start-1 sm:row-start-auto" />,
                     ],
                     tech_stacks: ['Laravel', 'AlpineJS', 'Blade Template', 'TailwindCSS', 'PostgreSQL']
                 },
